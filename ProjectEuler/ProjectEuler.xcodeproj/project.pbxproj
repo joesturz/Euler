@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D8CA21931F0B4896001951BC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CA21921F0B4896001951BC /* main.swift */; };
 		D8CA219A1F0B48C8001951BC /* problem1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CA21991F0B48C8001951BC /* problem1.swift */; };
+		D8CA219C1F0B4AEE001951BC /* problem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CA219B1F0B4AEE001951BC /* problem2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,7 @@
 		D8CA218F1F0B4896001951BC /* ProjectEuler */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ProjectEuler; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8CA21921F0B4896001951BC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D8CA21991F0B48C8001951BC /* problem1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = problem1.swift; sourceTree = "<group>"; };
+		D8CA219B1F0B4AEE001951BC /* problem2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = problem2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				D8CA21921F0B4896001951BC /* main.swift */,
 				D8CA21991F0B48C8001951BC /* problem1.swift */,
+				D8CA219B1F0B4AEE001951BC /* problem2.swift */,
 			);
 			path = ProjectEuler;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			files = (
 				D8CA21931F0B4896001951BC /* main.swift in Sources */,
 				D8CA219A1F0B48C8001951BC /* problem1.swift in Sources */,
+				D8CA219C1F0B4AEE001951BC /* problem2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

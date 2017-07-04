@@ -8,6 +8,13 @@
 
 import Foundation
 
-print(Problem1.getThreeFiveSum(end: 1000))
+func printer(problem number: Int, solution result: Int) {
+  print("Problem \(number): \(result)")
+}
+
+printer(problem: 1, solution:Problem1.getThreeFiveSum(end: 1000))
+printer(problem: 2, solution:Problem2.runFib(end: 4000000))
+
+
 
 
