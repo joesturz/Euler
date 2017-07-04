@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8562B971F0BC6780013200D /* problem5.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8562B961F0BC6780013200D /* problem5.swift */; };
 		D8CA21931F0B4896001951BC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CA21921F0B4896001951BC /* main.swift */; };
 		D8CA219A1F0B48C8001951BC /* problem1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CA21991F0B48C8001951BC /* problem1.swift */; };
 		D8CA219C1F0B4AEE001951BC /* problem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CA219B1F0B4AEE001951BC /* problem2.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D8562B961F0BC6780013200D /* problem5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = problem5.swift; sourceTree = "<group>"; };
 		D8CA218F1F0B4896001951BC /* ProjectEuler */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ProjectEuler; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8CA21921F0B4896001951BC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D8CA21991F0B48C8001951BC /* problem1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = problem1.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				D8CA219B1F0B4AEE001951BC /* problem2.swift */,
 				D8CA219D1F0B4D33001951BC /* problem3.swift */,
 				D8CA219F1F0B50A6001951BC /* problem4.swift */,
+				D8562B961F0BC6780013200D /* problem5.swift */,
 			);
 			path = ProjectEuler;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 				D8CA219E1F0B4D33001951BC /* problem3.swift in Sources */,
 				D8CA219A1F0B48C8001951BC /* problem1.swift in Sources */,
 				D8CA219C1F0B4AEE001951BC /* problem2.swift in Sources */,
+				D8562B971F0BC6780013200D /* problem5.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +275,7 @@
 				D8CA21981F0B4896001951BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
