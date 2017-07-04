@@ -14,7 +14,4 @@ func printer(problem number: Int, solution result: Int) {
 
 printer(problem: 1, solution:Problem1.getThreeFiveSum(end: 1000))
 printer(problem: 2, solution:Problem2.runFib(end: 4000000))
-
-
-
-
+printer(problem: 3, solution: Problem3.getMaxPrimeFrom(largeNumber: 600851475143))
