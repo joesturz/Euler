@@ -41,13 +41,13 @@ class Problem5
     {
       values.insert(i)
     }
-    return removeExtraDivisorsFrom(Set: values)
+    return removeExtraDivisorsFrom(set: values)
   }
   
-  static func removeExtraDivisorsFrom(Set: Set<Int>) -> Set<Int>
+  static func removeExtraDivisorsFrom(set: Set<Int>) -> Set<Int>
   {
-    var result: Set = Set
-    for i in Set {
+    var result: Set = set
+    for i in set {
       let removeList = Problem3.listDivisors(number: i)
       for j in removeList
       {
