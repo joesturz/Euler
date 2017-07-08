@@ -53,36 +53,11 @@ class Problem3 {
     return result
   }
   
-  static func determinePrime(number: Int) -> Bool{
-    if(number <= 1)
-    {
-      return false
-    }
-    else if(number <= 3)
-    {
-      return true
-    }
-    else if (number % 2 == 0 || number % 3 == 0)
-    {
-      return false
-    }
-    var i = 5
-    while(i * i <= number)
-    {
-      if(number % i == 0 || number % (i + 2) == 0)
-      {
-        return false
-      }
-      i = i + 6
-    }
-    return true
-  }
-  
   static func getMaxPrimeFrom(largeNumber: Int) -> (Int){
     let list = listDivisors(number: largeNumber)
     var primeList = [Int]()
     for num in list {
-      if(determinePrime(number: num))
+      if(Prime.determinePrime(number: num))
       {
         primeList.append(num)
       }
