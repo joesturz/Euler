@@ -18,6 +18,6 @@ func printer(problem number: Int, solution result: Int) {
 //printer(problem: 4, solution: Problem4.getLargestPalindrome(max: 999))
 //printer(problem: 5, solution: Problem5.getSmallestMultiple(of: 20))
 //printer(problem: 6, solution: Problem6.getDifference(to: 100))
-printer(problem: 7, solution: Problem7.findPrime(number: 10001))
+//printer(problem: 7, solution: Problem7.findPrime(number: 10001))
+printer(problem: 8, solution: Problem8.findLargestProductIn(numberAsString: Problem8.otherNumberAsString, factorCount: 13))
 
-//print(Prime.sieveOfEratosthenes(to: 20))
