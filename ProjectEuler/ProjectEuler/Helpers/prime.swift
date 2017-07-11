@@ -27,7 +27,6 @@ class Prime {
           var j = i * i
           let iSquared = i * i
           var iteration = 0
-          print(temp)
           while (j < number)
           {
             temp[j] = false
