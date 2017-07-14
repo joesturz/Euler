@@ -21,5 +21,6 @@ func printer(problem number: Int, solution result: Int) {
 //printer(problem: 7, solution: Problem7.findPrime(number: 10001))
 //printer(problem: 8, solution: Problem8.findLargestProductIn(numberAsString: Problem8.otherNumberAsString, factorCount: 13))
 //printer(problem: 9, solution: Problem9.getPythagoreanTripletProduct(1000))
-printer(problem: 10, solution: Problem10.getSumOfPrimes(below: 2_000_000))
+//printer(problem: 10, solution: Problem10.getSumOfPrimes(below: 2_000_000))
+printer(problem: 11, solution: Problem11.findAllDirections())
 
