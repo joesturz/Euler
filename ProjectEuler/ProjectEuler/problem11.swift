@@ -10,7 +10,7 @@ import Foundation
 
 class Problem11
 {
-  static let grid: [[Int]] = [[08, 02, 22, 97, 38, 15, 00, 40, 00, 75, 04, 05, 07, 78, 52, 12, 50, 77, 91, 08],
+  private static let grid: [[Int]] = [[08, 02, 22, 97, 38, 15, 00, 40, 00, 75, 04, 05, 07, 78, 52, 12, 50, 77, 91, 08],
                        [49, 49, 99, 40, 17, 81, 18, 57, 60, 87, 17, 40, 98, 43, 69, 48, 04, 56, 62, 00],
                        [81, 49, 31, 73, 55, 79, 14, 29, 93, 71, 40, 67, 53, 88, 30, 03, 49, 13, 36, 65],
                        [52, 70, 95, 23, 04, 60, 11, 42, 69, 24, 68, 56, 01, 32, 56, 71, 37, 02, 36, 91],
@@ -31,76 +31,83 @@ class Problem11
                        [20, 73, 35, 29, 78, 31, 90, 01, 74, 31, 49, 71, 48, 86, 81, 16, 23, 57, 05, 54],
                        [01, 70, 54, 71, 83, 51, 54, 69, 16, 92, 33, 48, 61, 43, 52, 01, 89, 19, 67, 48]]
   
-  static let factorCount = 4
+  private static let factorCount = 4
   
-  static var products = [Int]()
+  private static let end = grid.count - factorCount
   
-  static func findAllDirections() -> (Int)
+  private static var products = [Int]()
+  
+  static func findProductInAllDirections() -> (Int)
   {
-    getVerticalProductsFrom(grid)
-    getHorizontalProductsFrom(grid)
-    getDiagonalbottomLeftTopRight(grid)
-    getDiagonalTopLeftBottomRight(grid)
+    var products = [Int]()
+    
+    products.append(contentsOf: getVerticalProductsFrom(grid))
+    products.append(contentsOf: getHorizontalProductsFrom(grid))
+    products.append(contentsOf: getDiagonalbottomLeftTopRight(grid))
+    products.append(contentsOf: getDiagonalTopLeftBottomRight(grid))
+    
     return products.max()!
   }
   
-  static func getHorizontalProductsFrom(_ grid: [[Int]])
+  private static func getHorizontalProductsFrom(_ grid: [[Int]]) -> ([Int])
   {
+    var result = [Int]()
     for row in grid
     {
       for col in (0...row.count - factorCount)
       {
         let value = row[col] * row[col + 1] * row[col + 2] * row[col + 3]
-        products.append(value)
+        result.append(value)
       }
     }
+    return result
   }
   
-  static func getVerticalProductsFrom(_ grid: [[Int]])
+  private static func getVerticalProductsFrom(_ grid: [[Int]]) -> ([Int])
   {
-    for row in (0...grid.count - factorCount)
+    var result = [Int]()
+    for row in (0...end)
     {
-      let row1 = grid[row]
-      let row2 = grid[row + 1]
-      let row3 = grid[row + 2]
-      let row4 = grid[row + 3]
+      let (row1, row2, row3, row4) = getFourRows(grid, row: row)
       for col in (0..<row1.count)
       {
         let value = row1[col] * row2[col] * row3[col] * row4[col]
-        products.append(value)
+        result.append(value)
       }
     }
+    return result
   }
   
-  static func getDiagonalTopLeftBottomRight(_ grid: [[Int]])
+  private static func getDiagonalTopLeftBottomRight(_ grid: [[Int]]) -> ([Int])
   {
-    for row in (0...grid.count - factorCount)
+    var result = [Int]()
+    for row in (0...end)
     {
-      let row1 = grid[row]
-      let row2 = grid[row + 1]
-      let row3 = grid[row + 2]
-      let row4 = grid[row + 3]
+      let (row1, row2, row3, row4) = getFourRows(grid, row: row)
       for col in (0...row1.count - factorCount)
       {
         let value = row1[col] * row2[col + 1] * row3[col + 2] * row4[col + 3]
-        products.append(value)
+        result.append(value)
       }
     }
+    return result
   }
   
-  static func getDiagonalbottomLeftTopRight(_ grid: [[Int]])
+  private static func getDiagonalbottomLeftTopRight(_ grid: [[Int]]) -> ([Int])
   {
-    for row in (0...grid.count - factorCount)
+    var result = [Int]()
+    for row in (0...end)
     {
-      let row1 = grid[row]
-      let row2 = grid[row + 1]
-      let row3 = grid[row + 2]
-      let row4 = grid[row + 3]
+      let (row1, row2, row3, row4) = getFourRows(grid, row: row)
       for col in (0...row1.count - factorCount)
       {
         let value = row1[col + 3] * row2[col + 2] * row3[col + 1] * row4[col]
-        products.append(value)
+        result.append(value)
       }
     }
+    return result
+  }
+  private static func getFourRows(_ grid: [[Int]], row: Int) -> ([Int],[Int],[Int],[Int]) {
+    return (grid[row], grid[row + 1], grid[row + 2], grid[row + 3])
   }
 }
