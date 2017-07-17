@@ -37,24 +37,9 @@ class Problem3 {
   //let text:String = "Hello world"
   //
   //var myString: String?
-  static func listDivisors(number: Int) -> ([Int]){
-    var temp:[Int] = [1]
-    let upperBound = Int(ceil(sqrt(Double(number))))
-    for i in (2...upperBound){
-      if (number % i == 0){
-        temp.append(i)
-      }
-    }
-    var result:[Int] = temp
-    for i in temp{
-      let j = Int(number / i)
-      result.append(j)
-    }
-    return result
-  }
   
   static func getMaxPrimeFrom(largeNumber: Int) -> (Int){
-    let list = listDivisors(number: largeNumber)
+    let list = Prime.listDivisors(number: largeNumber)
     var primeList = [Int]()
     for num in list {
       if(Prime.determinePrime(number: num))

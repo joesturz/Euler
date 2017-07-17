@@ -48,7 +48,7 @@ class Problem5
   {
     var result: Set = set
     for i in set {
-      let removeList = Problem3.listDivisors(number: i)
+      let removeList = Prime.listDivisors(number: i)
       for j in removeList
       {
         if(j < i)

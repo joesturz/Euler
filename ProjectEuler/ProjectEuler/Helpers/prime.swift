@@ -46,6 +46,47 @@ class Prime {
     return result
   }
   
+  static func listDivisors(number: Int) -> ([Int]){
+    var temp:[Int] = [1]
+    if number == 1
+    {
+      return temp
+    }
+    let upperBound = Int(ceil(sqrt(Double(number))))
+    for i in (2...upperBound){
+      if (number % i == 0){
+        temp.append(i)
+      }
+    }
+    var result:[Int] = temp
+    for i in temp{
+      let j = Int(number / i)
+      result.append(j)
+    }
+    return result
+  }
+  
+  static func setOfDivisors(number: Int) -> (Set<Int>){
+    var temp:Set<Int> = [1]
+    if number == 1
+    {
+      return temp
+    }
+    let upperBound = Int(ceil(sqrt(Double(number))))
+    for i in (2...upperBound){
+      if (number % i == 0){
+        temp.insert(i)
+      }
+    }
+    var result:Set<Int> = temp
+    for i in temp{
+      let j = Int(number / i)
+      result.insert(j)
+    }
+    return result
+  }
+
+  
   static func determinePrime(number: Int) -> Bool
   {
     if(number <= 1)
