@@ -29,4 +29,3 @@ func printer(problem number: Int, solution result: [Int]) {
 //printer(problem: 11, solution: Problem11.findProductInAllDirections())
 printer(problem: 12, solution: Problem12.triangleValueWithDivisorCountGreaterThan(500))
 //printer(problem: 13, solution: Problem13.getSumFromALargeStringOfNumbers(Problem13.stringArray))
-

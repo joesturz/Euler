@@ -101,7 +101,11 @@ class Problem11
       let (row1, row2, row3, row4) = getFourRows(grid, row: row)
       for col in (0...row1.count - factorCount)
       {
-        let value = row1[col + 3] * row2[col + 2] * row3[col + 1] * row4[col]
+        let val1 = row1[col + 3]
+        let val2 = row2[col + 2]
+        let val3 = row3[col + 1]
+        let val4 = row4[col]
+        let value = val1 * val2 * val3 * val4
         result.append(value)
       }
     }

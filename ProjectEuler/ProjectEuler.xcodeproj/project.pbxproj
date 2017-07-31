@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D838FADC1F2EE113005260C9 /* MG Benchmark Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = D838FAD71F2EE113005260C9 /* MG Benchmark Tools.swift */; };
+		D838FADD1F2EE113005260C9 /* MG Basic Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = D838FAD81F2EE113005260C9 /* MG Basic Math.swift */; };
+		D838FADE1F2EE113005260C9 /* SMP Bignum Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D838FAD91F2EE113005260C9 /* SMP Bignum Extensions.swift */; };
+		D838FADF1F2EE113005260C9 /* SMP String Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = D838FADA1F2EE113005260C9 /* SMP String Module.swift */; };
+		D838FAE01F2EE113005260C9 /* SMP Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = D838FADB1F2EE113005260C9 /* SMP Core.swift */; };
 		D8878DEF1F13328800BE3F0E /* stringMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8878DEE1F13328800BE3F0E /* stringMachine.swift */; };
 		D8A38B9A1F10293800C5DB01 /* prime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A38B991F10293800C5DB01 /* prime.swift */; };
 		D8BB22331F2EBA9700A8C38D /* Problem12.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BB22251F2EBA9700A8C38D /* Problem12.swift */; };
@@ -38,6 +43,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D838FAD71F2EE113005260C9 /* MG Benchmark Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MG Benchmark Tools.swift"; sourceTree = "<group>"; };
+		D838FAD81F2EE113005260C9 /* MG Basic Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MG Basic Math.swift"; sourceTree = "<group>"; };
+		D838FAD91F2EE113005260C9 /* SMP Bignum Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SMP Bignum Extensions.swift"; sourceTree = "<group>"; };
+		D838FADA1F2EE113005260C9 /* SMP String Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SMP String Module.swift"; sourceTree = "<group>"; };
+		D838FADB1F2EE113005260C9 /* SMP Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SMP Core.swift"; sourceTree = "<group>"; };
 		D8878DEE1F13328800BE3F0E /* stringMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stringMachine.swift; sourceTree = "<group>"; };
 		D8A38B991F10293800C5DB01 /* prime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = prime.swift; sourceTree = "<group>"; };
 		D8BB22251F2EBA9700A8C38D /* Problem12.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem12.swift; sourceTree = "<group>"; };
@@ -68,9 +78,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D838FAD61F2EE0D3005260C9 /* BInt */ = {
+			isa = PBXGroup;
+			children = (
+				D838FAD81F2EE113005260C9 /* MG Basic Math.swift */,
+				D838FAD71F2EE113005260C9 /* MG Benchmark Tools.swift */,
+				D838FAD91F2EE113005260C9 /* SMP Bignum Extensions.swift */,
+				D838FADB1F2EE113005260C9 /* SMP Core.swift */,
+				D838FADA1F2EE113005260C9 /* SMP String Module.swift */,
+			);
+			path = BInt;
+			sourceTree = "<group>";
+		};
 		D8878DF01F1337F500BE3F0E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				D838FAD61F2EE0D3005260C9 /* BInt */,
 				D8A38B991F10293800C5DB01 /* prime.swift */,
 				D8878DEE1F13328800BE3F0E /* stringMachine.swift */,
 			);
@@ -184,8 +207,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8BB223C1F2EBA9700A8C38D /* Problem6.swift in Sources */,
+				D838FAE01F2EE113005260C9 /* SMP Core.swift in Sources */,
 				D8BB22391F2EBA9700A8C38D /* Problem4.swift in Sources */,
 				D8BB22331F2EBA9700A8C38D /* Problem12.swift in Sources */,
+				D838FADF1F2EE113005260C9 /* SMP String Module.swift in Sources */,
 				D8BB223B1F2EBA9700A8C38D /* Problem5.swift in Sources */,
 				D8BB22351F2EBA9700A8C38D /* Problem9.swift in Sources */,
 				D8BB22341F2EBA9700A8C38D /* Problem11.swift in Sources */,
@@ -197,7 +222,10 @@
 				D8878DEF1F13328800BE3F0E /* stringMachine.swift in Sources */,
 				D8BB22371F2EBA9700A8C38D /* main.swift in Sources */,
 				D8BB22401F2EBA9700A8C38D /* Problem3.swift in Sources */,
+				D838FADE1F2EE113005260C9 /* SMP Bignum Extensions.swift in Sources */,
 				D8A38B9A1F10293800C5DB01 /* prime.swift in Sources */,
+				D838FADC1F2EE113005260C9 /* MG Benchmark Tools.swift in Sources */,
+				D838FADD1F2EE113005260C9 /* MG Basic Math.swift in Sources */,
 				D8BB223A1F2EBA9700A8C38D /* Problem13.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
