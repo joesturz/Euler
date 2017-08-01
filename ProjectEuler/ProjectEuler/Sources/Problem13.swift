@@ -10,14 +10,14 @@ import Foundation
 
 class Problem13
 {
-  static func getSumFromALargeStringOfNumbers(_ string: [String]) -> Int
+  static func getSumFromALargeStringOfNumbers(_ string: [String]) -> BInt
   {
-    var arr = [Int]()
+    var total = BInt("0")
     for char in string
     {
-      arr.append(Int(String(char))!)
+      total = total + BInt(char)
     }
-    return arr.reduce(0, +)
+    return total
   }
   
   static let stringArray = ["37107287533902102798797998220837590246510135740250",
