@@ -867,7 +867,7 @@ private func +=°(lhs: inout Limbs, rhs: Limbs)
 		{
 			if i < rhc
 			{
-				(newLimb, ovfl) = lhs[i].addingReportingOverflow(1)
+				(newLimb, ovfl) = rhs[i].addingReportingOverflow(1)
 				lhs.append(newLimb)
 			}
 			else
