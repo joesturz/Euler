@@ -33,5 +33,6 @@ func printer(problem number: Int, solution result: BInt) {
 //printer(problem: 11, solution: Problem11.findProductInAllDirections())
 //printer(problem: 12, solution: Problem12.triangleValueWithDivisorCountGreaterThan(500))
 //printer(problem: 13, solution: Problem13.getSumFromALargeStringOfNumbers(Problem13.stringArray))
-printer(problem: 14, solution: Problem14.getMaxIterationInColatz(1000000))
+//printer(problem: 14, solution: Problem14.getMaxIterationInColatz(1000000))
+printer(problem: 15, solution: Problem15.getPossiblePathsForGridOf(20))
 

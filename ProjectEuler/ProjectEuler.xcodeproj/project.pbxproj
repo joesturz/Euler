@@ -29,6 +29,7 @@
 		D8BB223E1F2EBA9700A8C38D /* Problem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BB22301F2EBA9700A8C38D /* Problem2.swift */; };
 		D8BB223F1F2EBA9700A8C38D /* Problem8.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BB22311F2EBA9700A8C38D /* Problem8.swift */; };
 		D8BB22401F2EBA9700A8C38D /* Problem3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BB22321F2EBA9700A8C38D /* Problem3.swift */; };
+		D8C482CA1F32E09400DA6355 /* Problem15.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C482C91F32E09400DA6355 /* Problem15.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -66,6 +67,7 @@
 		D8BB22301F2EBA9700A8C38D /* Problem2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem2.swift; sourceTree = "<group>"; };
 		D8BB22311F2EBA9700A8C38D /* Problem8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem8.swift; sourceTree = "<group>"; };
 		D8BB22321F2EBA9700A8C38D /* Problem3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem3.swift; sourceTree = "<group>"; };
+		D8C482C91F32E09400DA6355 /* Problem15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem15.swift; sourceTree = "<group>"; };
 		D8CA218F1F0B4896001951BC /* ProjectEuler */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ProjectEuler; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -120,6 +122,7 @@
 				D8BB22251F2EBA9700A8C38D /* Problem12.swift */,
 				D8BB222C1F2EBA9700A8C38D /* Problem13.swift */,
 				D849A8E01F31821100599897 /* Problem14.swift */,
+				D8C482C91F32E09400DA6355 /* Problem15.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				D838FAE01F2EE113005260C9 /* SMP Core.swift in Sources */,
 				D8BB22391F2EBA9700A8C38D /* Problem4.swift in Sources */,
 				D8BB22331F2EBA9700A8C38D /* Problem12.swift in Sources */,
+				D8C482CA1F32E09400DA6355 /* Problem15.swift in Sources */,
 				D838FADF1F2EE113005260C9 /* SMP String Module.swift in Sources */,
 				D8BB223B1F2EBA9700A8C38D /* Problem5.swift in Sources */,
 				D8BB22351F2EBA9700A8C38D /* Problem9.swift in Sources */,
