@@ -17,4 +17,9 @@ class StringMachine
     let sub = String(string.substring(with: (startIndex..<endIndex)))
     return sub
   }
+  
+  static func getIntFromCharacter(_ character: Character) -> Int {
+    let tempString = String(character)
+    return Int(tempString)!
+  }
 }
