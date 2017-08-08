@@ -9,7 +9,7 @@
 import Foundation
 class Problem18
 {
-  static let DirectedAcyclicalGraph =
+  static let largeTriangleOfNumbers =
   [[75],
   [95, 64],
   [17, 47, 82],
@@ -26,8 +26,33 @@ class Problem18
   [63, 66, 04, 68, 89, 53, 67, 30, 73, 16, 69, 87, 40, 31],
   [04, 62, 98, 27, 23, 09, 70, 98, 73, 93, 38, 53, 60, 04, 23]]
   
-  static func getLongestPathIn(_ DAG: [[Int]]) -> Int
+  static let testGraph =
+    [[3],
+    [7, 4],
+    [2, 4, 6],
+    [8, 5, 9, 3]]
+  
+  static func getLargestSumIn(_ triangleOfNumbers: [[Int]]) -> Int
   {
-    return 0
+    var tempArray = triangleOfNumbers.last!
+    for i in (0..<(triangleOfNumbers.count - 1)).reversed()
+    {
+      tempArray = addRow(tempArray, to: triangleOfNumbers[i])
+    }
+    return tempArray.first!
+  }
+  
+  static func addRow(_ bottom: [Int], to top:[Int]) -> [Int]
+  {
+    var resultArray = [Int]()
+    for i in (0..<top.count)
+    {
+      let a = top[i]
+      let b = (bottom[i] > bottom[i + 1]) ? bottom[i] : bottom[i + 1]
+      resultArray.append(a + b)
+    }
+    
+    return resultArray
   }
 }
+

@@ -36,5 +36,6 @@ func printer(problem number: Int, solution result: BInt) {
 //printer(problem: 14, solution: Problem14.getMaxIterationInColatz(1000000))
 //printer(problem: 15, solution: Problem15.getPossiblePathsForGridOf(20))
 //printer(problem: 16, solution: Problem16.getTheSumOfAllTheIntsInTwoToThe(1000))
-printer(problem: 17, solution: Problem17.getTotalLetterCountUpTo(1000))
+//printer(problem: 17, solution: Problem17.getTotalLetterCountUpTo(1000))
+printer(problem: 18, solution: Problem18.getLargestSumIn(Problem18.largeTriangleOfNumbers))
 

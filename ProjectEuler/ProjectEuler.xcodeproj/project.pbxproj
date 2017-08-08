@@ -10,6 +10,7 @@
 		D81069911F34329700E0984A /* Problem16.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81069901F34329700E0984A /* Problem16.swift */; };
 		D8141B991F350A7100BDA446 /* Problem17.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8141B981F350A7100BDA446 /* Problem17.swift */; };
 		D8141B9B1F36986600BDA446 /* Problem18.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8141B9A1F36986600BDA446 /* Problem18.swift */; };
+		D821B6191F3A806000F271F6 /* Problem67.swift in Sources */ = {isa = PBXBuildFile; fileRef = D821B6181F3A806000F271F6 /* Problem67.swift */; };
 		D838FADC1F2EE113005260C9 /* MG Benchmark Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = D838FAD71F2EE113005260C9 /* MG Benchmark Tools.swift */; };
 		D838FADD1F2EE113005260C9 /* MG Basic Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = D838FAD81F2EE113005260C9 /* MG Basic Math.swift */; };
 		D838FADE1F2EE113005260C9 /* SMP Bignum Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D838FAD91F2EE113005260C9 /* SMP Bignum Extensions.swift */; };
@@ -51,6 +52,7 @@
 		D81069901F34329700E0984A /* Problem16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem16.swift; sourceTree = "<group>"; };
 		D8141B981F350A7100BDA446 /* Problem17.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem17.swift; sourceTree = "<group>"; };
 		D8141B9A1F36986600BDA446 /* Problem18.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem18.swift; sourceTree = "<group>"; };
+		D821B6181F3A806000F271F6 /* Problem67.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem67.swift; sourceTree = "<group>"; };
 		D838FAD71F2EE113005260C9 /* MG Benchmark Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MG Benchmark Tools.swift"; sourceTree = "<group>"; };
 		D838FAD81F2EE113005260C9 /* MG Basic Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MG Basic Math.swift"; sourceTree = "<group>"; };
 		D838FAD91F2EE113005260C9 /* SMP Bignum Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SMP Bignum Extensions.swift"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				D81069901F34329700E0984A /* Problem16.swift */,
 				D8141B981F350A7100BDA446 /* Problem17.swift */,
 				D8141B9A1F36986600BDA446 /* Problem18.swift */,
+				D821B6181F3A806000F271F6 /* Problem67.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				D849A8E11F31821100599897 /* Problem14.swift in Sources */,
 				D8BB223D1F2EBA9700A8C38D /* Problem10.swift in Sources */,
 				D8BB223E1F2EBA9700A8C38D /* Problem2.swift in Sources */,
+				D821B6191F3A806000F271F6 /* Problem67.swift in Sources */,
 				D8BB22361F2EBA9700A8C38D /* Problem7.swift in Sources */,
 				D8878DEF1F13328800BE3F0E /* StringMachine.swift in Sources */,
 				D8BB22371F2EBA9700A8C38D /* main.swift in Sources */,
