@@ -9,7 +9,7 @@
 import Foundation
 class FileMachine
 {
-  func getFileContents(_ pathToFile: String, ofType: String) -> String {
+  static func getFileContents(_ pathToFile: String, ofType: String) -> String {
     return ""
   }
 }
