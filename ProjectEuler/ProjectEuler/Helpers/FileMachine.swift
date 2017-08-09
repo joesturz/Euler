@@ -1,5 +1,5 @@
 //
-//  Problem67.swift
+//  FileMachine.swift
 //  ProjectEuler
 //
 //  Created by Joe Sturzenegger on 8/8/17.
@@ -7,8 +7,9 @@
 //
 
 import Foundation
-class Problem67
+class FileMachine
 {
-  //see Problem18 to compute the data
-
+  func getFileContents(_ pathToFile: String, ofType: String) -> String {
+    return ""
+  }
 }
