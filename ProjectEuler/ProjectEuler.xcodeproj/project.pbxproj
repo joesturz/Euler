@@ -50,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		D81069901F34329700E0984A /* Problem16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem16.swift; sourceTree = "<group>"; };
+		D810BE071F3A87E200925571 /* triangle.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = triangle.txt; sourceTree = "<group>"; };
 		D8141B981F350A7100BDA446 /* Problem17.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem17.swift; sourceTree = "<group>"; };
 		D8141B9A1F36986600BDA446 /* Problem18.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem18.swift; sourceTree = "<group>"; };
 		D821B6181F3A806000F271F6 /* Problem67.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem67.swift; sourceTree = "<group>"; };
@@ -90,6 +91,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D810BE051F3A871300925571 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				D810BE071F3A87E200925571 /* triangle.txt */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
 		D838FAD61F2EE0D3005260C9 /* BInt */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +167,7 @@
 		D8CA21911F0B4896001951BC /* ProjectEuler */ = {
 			isa = PBXGroup;
 			children = (
+				D810BE051F3A871300925571 /* Files */,
 				D8BB22411F2EBAA100A8C38D /* Sources */,
 				D8878DF01F1337F500BE3F0E /* Helpers */,
 			);
