@@ -33,18 +33,19 @@
 		D8BB223E1F2EBA9700A8C38D /* Problem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BB22301F2EBA9700A8C38D /* Problem2.swift */; };
 		D8BB223F1F2EBA9700A8C38D /* Problem8.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BB22311F2EBA9700A8C38D /* Problem8.swift */; };
 		D8BB22401F2EBA9700A8C38D /* Problem3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BB22321F2EBA9700A8C38D /* Problem3.swift */; };
+		D8BE3B311F3AC9B200DCD816 /* FileMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BE3B301F3AC9B200DCD816 /* FileMachine.swift */; };
 		D8C482CA1F32E09400DA6355 /* Problem15.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C482C91F32E09400DA6355 /* Problem15.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		D8CA218D1F0B4896001951BC /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			buildActionMask = 12;
+			dstPath = /usr/share/man/man1;
 			dstSubfolderSpec = 0;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -76,6 +77,7 @@
 		D8BB22301F2EBA9700A8C38D /* Problem2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem2.swift; sourceTree = "<group>"; };
 		D8BB22311F2EBA9700A8C38D /* Problem8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem8.swift; sourceTree = "<group>"; };
 		D8BB22321F2EBA9700A8C38D /* Problem3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem3.swift; sourceTree = "<group>"; };
+		D8BE3B301F3AC9B200DCD816 /* FileMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileMachine.swift; sourceTree = "<group>"; };
 		D8C482C91F32E09400DA6355 /* Problem15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem15.swift; sourceTree = "<group>"; };
 		D8CA218F1F0B4896001951BC /* ProjectEuler */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ProjectEuler; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -117,6 +119,7 @@
 				D838FAD61F2EE0D3005260C9 /* BInt */,
 				D8A38B991F10293800C5DB01 /* prime.swift */,
 				D8878DEE1F13328800BE3F0E /* StringMachine.swift */,
+				D8BE3B301F3AC9B200DCD816 /* FileMachine.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				D8141B9B1F36986600BDA446 /* Problem18.swift in Sources */,
 				D838FAE01F2EE113005260C9 /* SMP Core.swift in Sources */,
 				D8BB22391F2EBA9700A8C38D /* Problem4.swift in Sources */,
+				D8BE3B311F3AC9B200DCD816 /* FileMachine.swift in Sources */,
 				D8BB22331F2EBA9700A8C38D /* Problem12.swift in Sources */,
 				D8C482CA1F32E09400DA6355 /* Problem15.swift in Sources */,
 				D838FADF1F2EE113005260C9 /* SMP String Module.swift in Sources */,
