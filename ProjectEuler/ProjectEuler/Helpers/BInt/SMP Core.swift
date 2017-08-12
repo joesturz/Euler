@@ -612,24 +612,24 @@ private func addLimbs(_ lhs: inout Limbs, _ rhs: Limbs, rhsPaddingZeroLimbs pz: 
 	}
 	let rhc = rhs.count &+ pz
 
-	var (newLimb, ovfl) = (Limb(0), ArithmeticOverflow.none)
+	var (newLimb, ovfl) = (Limb(0), false)
 
 	let min = lhc < rhc ? lhc : rhc
 
 	var i = pz
 	while i < min
 	{
-		if ovfl == ArithmeticOverflow.overflow
+		if ovfl
 		{
 			(newLimb, ovfl) = lhs[i].addingReportingOverflow(rhs[i &- pz])
 			newLimb = newLimb &+ 1
-      if ovfl == ArithmeticOverflow.overflow || newLimb == 0
+      if ovfl || newLimb == 0
       {
-        ovfl = ArithmeticOverflow.overflow
+        ovfl = true
       }
       else
       {
-        ovfl = ArithmeticOverflow.none
+        ovfl = false
       }
 		}
 		else
@@ -641,7 +641,7 @@ private func addLimbs(_ lhs: inout Limbs, _ rhs: Limbs, rhsPaddingZeroLimbs pz: 
 		i += 1
 	}
 
-	while ovfl == ArithmeticOverflow.overflow
+	while ovfl
 	{
 		if i < lhc
 		{
@@ -649,13 +649,13 @@ private func addLimbs(_ lhs: inout Limbs, _ rhs: Limbs, rhsPaddingZeroLimbs pz: 
 			{
 				(newLimb, ovfl) = lhs[i].addingReportingOverflow(rhs[i &- pz])
 				newLimb = newLimb &+ 1
-        if ovfl == ArithmeticOverflow.overflow || newLimb == 0
+        if ovfl || newLimb == 0
         {
-          ovfl = ArithmeticOverflow.overflow
+          ovfl = true
         }
         else
         {
-          ovfl = ArithmeticOverflow.none
+          ovfl = false
         }
 			}
 			else
@@ -707,7 +707,7 @@ private func addOneLimbToLimbs(_ lhs: inout Limbs, _ rhs: Limb, rhsPaddingZeroLi
 	let (newLimb, ovfl) = lhs[i].addingReportingOverflow(rhs)
 	lhs[i] = newLimb
 
-	while ovfl == ArithmeticOverflow.overflow
+	while ovfl
 	{
 		i += 1
 
@@ -747,17 +747,17 @@ private func addTwoLimbsToLimbs(_ lhs: inout Limbs, _ rhsLo: Limb, _ rhsHi: Limb
 
 	if i < lhc
 	{
-		if ovfl == ArithmeticOverflow.overflow
+		if ovfl
 		{
 			(newLimb, ovfl) = lhs[i].addingReportingOverflow(rhsHi)
 			newLimb = newLimb &+ 1
-      if ovfl == ArithmeticOverflow.overflow || newLimb == 0
+      if ovfl || newLimb == 0
       {
-        ovfl = ArithmeticOverflow.overflow
+        ovfl = true
       }
       else
       {
-        ovfl = ArithmeticOverflow.none
+        ovfl = false
       }
 		}
 		else
@@ -769,7 +769,7 @@ private func addTwoLimbsToLimbs(_ lhs: inout Limbs, _ rhsLo: Limb, _ rhsHi: Limb
 	}
 	else
 	{
-		if ovfl == ArithmeticOverflow.overflow
+		if ovfl
 		{
 			newLimb = rhsHi &+ 1
 			lhs.append(newLimb)
@@ -784,7 +784,7 @@ private func addTwoLimbsToLimbs(_ lhs: inout Limbs, _ rhsLo: Limb, _ rhsHi: Limb
 		return
 	}
 
-	while ovfl == ArithmeticOverflow.overflow
+	while ovfl
 	{
 		i += 1
 
@@ -808,25 +808,25 @@ private func +=°(lhs: inout Limbs, rhs: Limbs)
 	let lhc = lhs.count
 	let rhc = rhs.count
 
-	var (newLimb, ovfl) = (Limb(0), ArithmeticOverflow.none)
+	var (newLimb, ovfl) = (Limb(0), false)
 
 	let min = lhc < rhc ? lhc : rhc
 
 	var i = 0
 	while i < min
 	{
-		if ovfl == ArithmeticOverflow.overflow
+		if ovfl
 		{
 			(newLimb, ovfl) = lhs[i].addingReportingOverflow(rhs[i])
 			newLimb = newLimb &+ 1
 
-      if ovfl == ArithmeticOverflow.overflow || newLimb == 0
+      if ovfl || newLimb == 0
       {
-        ovfl = ArithmeticOverflow.overflow
+        ovfl = true
       }
       else
       {
-        ovfl = ArithmeticOverflow.none
+        ovfl = false
       }
 
 		}
@@ -839,7 +839,7 @@ private func +=°(lhs: inout Limbs, rhs: Limbs)
 		i += 1
 	}
 
-	while ovfl == ArithmeticOverflow.overflow
+	while ovfl
 	{
 		if i < lhc
 		{
@@ -847,13 +847,13 @@ private func +=°(lhs: inout Limbs, rhs: Limbs)
 			{
 				(newLimb, ovfl) = lhs[i].addingReportingOverflow(rhs[i])
 				newLimb = newLimb &+ 1
-        if ovfl == ArithmeticOverflow.overflow || newLimb == 0
+        if ovfl || newLimb == 0
         {
-          ovfl = ArithmeticOverflow.overflow
+          ovfl = true
         }
         else
         {
-          ovfl = ArithmeticOverflow.none
+          ovfl = false
         }
 			}
 			else
@@ -920,7 +920,7 @@ private func -=°(lhs: inout Limbs, rhs: Limbs)
 	if lhs <° rhs { swap(&lhs, &rhs) }
 
 	let rhc = rhs.count
-	var ovfl = ArithmeticOverflow.none
+	var ovfl = false
 
 	var i = 0
 
@@ -929,16 +929,16 @@ private func -=°(lhs: inout Limbs, rhs: Limbs)
 
 	while i < rhc
 	{
-		if ovfl == ArithmeticOverflow.overflow
+		if ovfl
 		{
 			(lhs[i], ovfl) = lhs[i].subtractingReportingOverflow(rhs[i])
 			lhs[i] = lhs[i] &- 1
-      if (ovfl == ArithmeticOverflow.overflow) || lhs[i] == Limb.max
+      if ovfl || lhs[i] == Limb.max
       {
-        ovfl = ArithmeticOverflow.overflow
+        ovfl = true
       }
       else {
-        ovfl = ArithmeticOverflow.none
+        ovfl = false
       }
 		}
 		else
@@ -949,7 +949,7 @@ private func -=°(lhs: inout Limbs, rhs: Limbs)
 		i += 1
 	}
 
-	while ovfl == ArithmeticOverflow.overflow
+	while ovfl
 	{
 		if i >= lhs.count
 		{
@@ -1079,7 +1079,7 @@ private func mul(res: inout Limbs, limbs lhs: Limbs, limbs rhs: Limbs)
 {
 	res.reserveCapacity(lhs.count + rhs.count)
 
-	var overflow: ArithmeticOverflow
+	var overflow: Bool
   var mulLo: UInt64
 	var mulHi, l, r,
 		lLo, lHi, rLo, rHi,
@@ -1097,7 +1097,7 @@ private func mul(res: inout Limbs, limbs lhs: Limbs, limbs rhs: Limbs)
 
       (mulLo, overflow) = l.multipliedReportingOverflow(by: r)
 
-			if overflow == ArithmeticOverflow.overflow
+			if overflow
 			{
 				/*
 				128 bit multiplication with low and high part
@@ -1135,7 +1135,7 @@ private func multiplyLimbs(limbs lhs: Limbs, limb r: Limb, addInto res: inout Li
 		return
 	}
 
-	var overflow: ArithmeticOverflow
+	var overflow: Bool
   var mulLo: UInt64
 	var mulHi, l,
 	lLo, lHi, rLo, rHi,
@@ -1148,7 +1148,7 @@ private func multiplyLimbs(limbs lhs: Limbs, limb r: Limb, addInto res: inout Li
 
     (mulLo, overflow) = l.multipliedReportingOverflow(by: r)
 
-		if overflow == ArithmeticOverflow.overflow
+		if overflow
 		{
 			/*
 			128 bit multiplication with low and high part
@@ -1192,7 +1192,7 @@ func square(res: inout Limbs, limbs lhs: Limbs)
 {
 	res.reserveCapacity(2 * lhs.count)
 
-	var overflow: ArithmeticOverflow
+	var overflow: Bool
   var mulLo: UInt64
 	var mulHi, l, r,
 		lLo, lHi, rLo, rHi,
@@ -1210,7 +1210,7 @@ func square(res: inout Limbs, limbs lhs: Limbs)
 
       (mulLo, overflow) = l.multipliedReportingOverflow(by: r)
 
-			if overflow == ArithmeticOverflow.overflow
+			if overflow
 			{
 				/*
 				128 bit multiplication with low and high part

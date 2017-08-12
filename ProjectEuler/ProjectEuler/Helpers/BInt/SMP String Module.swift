@@ -298,7 +298,7 @@ private func mulDigits(addInto res: inout Digits, _ lhs: Digits, _ rhs: Digits)
 {
 	res.reserveCapacity(lhs.count + rhs.count)
 
-	var overflow: ArithmeticOverflow
+	var overflow: Bool
   var mulLo: UInt64
 	var lLo, lHi, rLo, rHi,
 	resLo, resHi, K, l, r: Digit
@@ -315,7 +315,7 @@ private func mulDigits(addInto res: inout Digits, _ lhs: Digits, _ rhs: Digits)
 
       (mulLo, overflow) = l.multipliedReportingOverflow(by: r)
 
-			if overflow == ArithmeticOverflow.overflow
+			if overflow
 			{
 				/*
 				From here, lhs * rhs >= 2^64, so res.count must be equal
