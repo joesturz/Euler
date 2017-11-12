@@ -38,6 +38,6 @@ func printer(problem number: Int, solution result: BInt) {
 //printer(problem: 16, solution: Problem16.getTheSumOfAllTheIntsInTwoToThe(1000))
 //printer(problem: 17, solution: Problem17.getTotalLetterCountUpTo(1000))
 //printer(problem: 18, solution: Problem18.getLargestSumIn(Problem18.largeTriangleOfNumbers))
-//printer(problem: 67, solution: Problem18.getLargestSumIn(Problem67.reallyBigTriangle))
-FileMachine.getFileContents("p067_triangle", fileType: "txt")
+printer(problem: 67, solution: Problem18.getLargestSumIn(Problem67.reallyBigTriangle()))
+
 

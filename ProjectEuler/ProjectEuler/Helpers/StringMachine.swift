@@ -22,4 +22,8 @@ class StringMachine
     let tempString = String(character)
     return Int(tempString)!
   }
+  
+  static func getIntFromString(_ string: String) -> Int {
+    return Int(string)!
+  }
 }
