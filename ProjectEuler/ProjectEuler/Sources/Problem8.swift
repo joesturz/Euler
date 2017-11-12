@@ -11,7 +11,7 @@ import Foundation
 class Problem8 {
   static func findLargestProductIn(numberAsString string: String, factorCount subStringLength: Int) -> Int
   {
-    let stringLength = string.characters.count
+    let stringLength = string.count
     if subStringLength > stringLength
     {
       return -1
@@ -39,7 +39,7 @@ class Problem8 {
   static func getProductOfSubstring(_ string: String) -> Int
   {
     var arr = [Int]()
-    for char in string.characters
+    for char in string
     {
       arr.append(Int(String(char))!)
     }

@@ -26,7 +26,7 @@ class Problem4 {
   
   private static func isPalindrome(number: Int) -> Bool {
     let stringified =  String(number)
-    let reversedString = String(stringified.characters.reversed())
+    let reversedString = String(stringified.reversed())
     return stringified == reversedString
   }
 }

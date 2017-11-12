@@ -9,7 +9,21 @@
 import Foundation
 class FileMachine
 {
-  static func getFileContents(_ pathToFile: String, ofType: String) -> String {
-    return ""
+  static func getFileContents(_ fileName: String, fileType: String) {
+    
+    // add file to resources folder
+    // go to project > target > build phases > copy files
+    // make sure the Destination drop down is set to Resources
+    // make sure the Subpath is set to Resources
+    // add the file to the list of Names
+    
+    if let path = Bundle.main.url(forResource: fileName, withExtension: fileType, subdirectory: "Resources")
+    {
+      print(path)
+    }
+    else
+    {
+      print("The file wasn't found...")
+    }
   }
 }

@@ -27,7 +27,7 @@ class Problem17
     let tens = (number % 100 - ones) / 10
     let hundreds = (number % 1000 -  ones - tens) / 100
     let thousands = (number % 10000 - ones - tens - hundreds) / 1000
-    return numberAsStringBuilder(ones: ones, tens: tens, hundreds: hundreds, thousands: thousands).characters.count
+    return numberAsStringBuilder(ones: ones, tens: tens, hundreds: hundreds, thousands: thousands).count
   }
   static func numberAsStringBuilder(ones: Int, tens: Int, hundreds: Int, thousands: Int) -> String
   {

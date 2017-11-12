@@ -14,8 +14,8 @@ class StringMachine
   {
     let startIndex = string.index(string.startIndex, offsetBy: start)
     let endIndex = string.index(string.startIndex, offsetBy: end)
-    let sub = String(string.substring(with: (startIndex..<endIndex)))
-    return sub
+    let sub = string[startIndex..<endIndex]
+    return String(sub)
   }
   
   static func getIntFromCharacter(_ character: Character) -> Int {

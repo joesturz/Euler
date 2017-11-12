@@ -17,6 +17,8 @@
 		D838FADF1F2EE113005260C9 /* SMP String Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = D838FADA1F2EE113005260C9 /* SMP String Module.swift */; };
 		D838FAE01F2EE113005260C9 /* SMP Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = D838FADB1F2EE113005260C9 /* SMP Core.swift */; };
 		D849A8E11F31821100599897 /* Problem14.swift in Sources */ = {isa = PBXBuildFile; fileRef = D849A8E01F31821100599897 /* Problem14.swift */; };
+		D86DE5A81FB8FF8700CB36E5 /* p067_triangle.txt in Resources */ = {isa = PBXBuildFile; fileRef = D86DE5A71FB8FF8700CB36E5 /* p067_triangle.txt */; };
+		D86DE5A91FB9012900CB36E5 /* p067_triangle.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = D86DE5A71FB8FF8700CB36E5 /* p067_triangle.txt */; };
 		D8878DEF1F13328800BE3F0E /* StringMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8878DEE1F13328800BE3F0E /* StringMachine.swift */; };
 		D8A38B9A1F10293800C5DB01 /* prime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A38B991F10293800C5DB01 /* prime.swift */; };
 		D8BB22331F2EBA9700A8C38D /* Problem12.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BB22251F2EBA9700A8C38D /* Problem12.swift */; };
@@ -41,9 +43,10 @@
 		D8CA218D1F0B4896001951BC /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
-			dstPath = /usr/share/man/man1;
-			dstSubfolderSpec = 0;
+			dstPath = Resources;
+			dstSubfolderSpec = 7;
 			files = (
+				D86DE5A91FB9012900CB36E5 /* p067_triangle.txt in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,7 +54,6 @@
 
 /* Begin PBXFileReference section */
 		D81069901F34329700E0984A /* Problem16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem16.swift; sourceTree = "<group>"; };
-		D810BE071F3A87E200925571 /* triangle.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = triangle.txt; sourceTree = "<group>"; };
 		D8141B981F350A7100BDA446 /* Problem17.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem17.swift; sourceTree = "<group>"; };
 		D8141B9A1F36986600BDA446 /* Problem18.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem18.swift; sourceTree = "<group>"; };
 		D821B6181F3A806000F271F6 /* Problem67.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem67.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 		D838FADA1F2EE113005260C9 /* SMP String Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SMP String Module.swift"; sourceTree = "<group>"; };
 		D838FADB1F2EE113005260C9 /* SMP Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SMP Core.swift"; sourceTree = "<group>"; };
 		D849A8E01F31821100599897 /* Problem14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem14.swift; sourceTree = "<group>"; };
+		D86DE5A71FB8FF8700CB36E5 /* p067_triangle.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p067_triangle.txt; sourceTree = "<group>"; };
 		D8878DEE1F13328800BE3F0E /* StringMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringMachine.swift; sourceTree = "<group>"; };
 		D8A38B991F10293800C5DB01 /* prime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = prime.swift; sourceTree = "<group>"; };
 		D8BB22251F2EBA9700A8C38D /* Problem12.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem12.swift; sourceTree = "<group>"; };
@@ -93,14 +96,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D810BE051F3A871300925571 /* Files */ = {
-			isa = PBXGroup;
-			children = (
-				D810BE071F3A87E200925571 /* triangle.txt */,
-			);
-			path = Files;
-			sourceTree = "<group>";
-		};
 		D838FAD61F2EE0D3005260C9 /* BInt */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,11 +165,19 @@
 		D8CA21911F0B4896001951BC /* ProjectEuler */ = {
 			isa = PBXGroup;
 			children = (
-				D810BE051F3A871300925571 /* Files */,
+				D8CD153E1F40D64E00FC04B5 /* Resources */,
 				D8BB22411F2EBAA100A8C38D /* Sources */,
 				D8878DF01F1337F500BE3F0E /* Helpers */,
 			);
 			path = ProjectEuler;
+			sourceTree = "<group>";
+		};
+		D8CD153E1F40D64E00FC04B5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D86DE5A71FB8FF8700CB36E5 /* p067_triangle.txt */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +188,7 @@
 			buildConfigurationList = D8CA21961F0B4896001951BC /* Build configuration list for PBXNativeTarget "ProjectEuler" */;
 			buildPhases = (
 				D8CA218B1F0B4896001951BC /* Sources */,
+				D8CD15411F40D6FD00FC04B5 /* Resources */,
 				D8CA218C1F0B4896001951BC /* Frameworks */,
 				D8CA218D1F0B4896001951BC /* CopyFiles */,
 			);
@@ -231,6 +235,17 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8CD15411F40D6FD00FC04B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D86DE5A81FB8FF8700CB36E5 /* p067_triangle.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D8CA218B1F0B4896001951BC /* Sources */ = {
