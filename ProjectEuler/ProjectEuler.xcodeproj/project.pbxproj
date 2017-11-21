@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D80AF5931FC3BED600EAC1D0 /* Problem19.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80AF5921FC3BED600EAC1D0 /* Problem19.swift */; };
 		D81069911F34329700E0984A /* Problem16.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81069901F34329700E0984A /* Problem16.swift */; };
 		D8141B991F350A7100BDA446 /* Problem17.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8141B981F350A7100BDA446 /* Problem17.swift */; };
 		D8141B9B1F36986600BDA446 /* Problem18.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8141B9A1F36986600BDA446 /* Problem18.swift */; };
@@ -53,6 +54,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D80AF5921FC3BED600EAC1D0 /* Problem19.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem19.swift; sourceTree = "<group>"; };
 		D81069901F34329700E0984A /* Problem16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem16.swift; sourceTree = "<group>"; };
 		D8141B981F350A7100BDA446 /* Problem17.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem17.swift; sourceTree = "<group>"; };
 		D8141B9A1F36986600BDA446 /* Problem18.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem18.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				D8141B981F350A7100BDA446 /* Problem17.swift */,
 				D8141B9A1F36986600BDA446 /* Problem18.swift */,
 				D821B6181F3A806000F271F6 /* Problem67.swift */,
+				D80AF5921FC3BED600EAC1D0 /* Problem19.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				D8BB223F1F2EBA9700A8C38D /* Problem8.swift in Sources */,
 				D81069911F34329700E0984A /* Problem16.swift in Sources */,
 				D8BB22381F2EBA9700A8C38D /* Problem1.swift in Sources */,
+				D80AF5931FC3BED600EAC1D0 /* Problem19.swift in Sources */,
 				D849A8E11F31821100599897 /* Problem14.swift in Sources */,
 				D8BB223D1F2EBA9700A8C38D /* Problem10.swift in Sources */,
 				D8BB223E1F2EBA9700A8C38D /* Problem2.swift in Sources */,
