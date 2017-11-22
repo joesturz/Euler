@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D80AF5931FC3BED600EAC1D0 /* Problem19.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80AF5921FC3BED600EAC1D0 /* Problem19.swift */; };
+		D80AF5951FC5338000EAC1D0 /* Problem20.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80AF5941FC5338000EAC1D0 /* Problem20.swift */; };
 		D81069911F34329700E0984A /* Problem16.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81069901F34329700E0984A /* Problem16.swift */; };
 		D8141B991F350A7100BDA446 /* Problem17.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8141B981F350A7100BDA446 /* Problem17.swift */; };
 		D8141B9B1F36986600BDA446 /* Problem18.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8141B9A1F36986600BDA446 /* Problem18.swift */; };
@@ -55,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		D80AF5921FC3BED600EAC1D0 /* Problem19.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem19.swift; sourceTree = "<group>"; };
+		D80AF5941FC5338000EAC1D0 /* Problem20.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem20.swift; sourceTree = "<group>"; };
 		D81069901F34329700E0984A /* Problem16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem16.swift; sourceTree = "<group>"; };
 		D8141B981F350A7100BDA446 /* Problem17.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem17.swift; sourceTree = "<group>"; };
 		D8141B9A1F36986600BDA446 /* Problem18.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem18.swift; sourceTree = "<group>"; };
@@ -98,6 +100,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D80AF5961FC5339200EAC1D0 /* 1-20 */ = {
+			isa = PBXGroup;
+			children = (
+				D8BB222A1F2EBA9700A8C38D /* Problem1.swift */,
+				D8BB22301F2EBA9700A8C38D /* Problem2.swift */,
+				D8BB22321F2EBA9700A8C38D /* Problem3.swift */,
+				D8BB222B1F2EBA9700A8C38D /* Problem4.swift */,
+				D8BB222D1F2EBA9700A8C38D /* Problem5.swift */,
+				D8BB222E1F2EBA9700A8C38D /* Problem6.swift */,
+				D8BB22281F2EBA9700A8C38D /* Problem7.swift */,
+				D8BB22311F2EBA9700A8C38D /* Problem8.swift */,
+				D8BB22271F2EBA9700A8C38D /* Problem9.swift */,
+				D8BB222F1F2EBA9700A8C38D /* Problem10.swift */,
+				D8BB22261F2EBA9700A8C38D /* Problem11.swift */,
+				D8BB22251F2EBA9700A8C38D /* Problem12.swift */,
+				D8BB222C1F2EBA9700A8C38D /* Problem13.swift */,
+				D849A8E01F31821100599897 /* Problem14.swift */,
+				D8C482C91F32E09400DA6355 /* Problem15.swift */,
+				D81069901F34329700E0984A /* Problem16.swift */,
+				D8141B981F350A7100BDA446 /* Problem17.swift */,
+				D8141B9A1F36986600BDA446 /* Problem18.swift */,
+				D80AF5921FC3BED600EAC1D0 /* Problem19.swift */,
+				D80AF5941FC5338000EAC1D0 /* Problem20.swift */,
+			);
+			path = "1-20";
+			sourceTree = "<group>";
+		};
 		D838FAD61F2EE0D3005260C9 /* BInt */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,26 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				D8BB22291F2EBA9700A8C38D /* main.swift */,
-				D8BB222A1F2EBA9700A8C38D /* Problem1.swift */,
-				D8BB22301F2EBA9700A8C38D /* Problem2.swift */,
-				D8BB22321F2EBA9700A8C38D /* Problem3.swift */,
-				D8BB222B1F2EBA9700A8C38D /* Problem4.swift */,
-				D8BB222D1F2EBA9700A8C38D /* Problem5.swift */,
-				D8BB222E1F2EBA9700A8C38D /* Problem6.swift */,
-				D8BB22281F2EBA9700A8C38D /* Problem7.swift */,
-				D8BB22311F2EBA9700A8C38D /* Problem8.swift */,
-				D8BB22271F2EBA9700A8C38D /* Problem9.swift */,
-				D8BB222F1F2EBA9700A8C38D /* Problem10.swift */,
-				D8BB22261F2EBA9700A8C38D /* Problem11.swift */,
-				D8BB22251F2EBA9700A8C38D /* Problem12.swift */,
-				D8BB222C1F2EBA9700A8C38D /* Problem13.swift */,
-				D849A8E01F31821100599897 /* Problem14.swift */,
-				D8C482C91F32E09400DA6355 /* Problem15.swift */,
-				D81069901F34329700E0984A /* Problem16.swift */,
-				D8141B981F350A7100BDA446 /* Problem17.swift */,
-				D8141B9A1F36986600BDA446 /* Problem18.swift */,
+				D80AF5961FC5339200EAC1D0 /* 1-20 */,
 				D821B6181F3A806000F271F6 /* Problem67.swift */,
-				D80AF5921FC3BED600EAC1D0 /* Problem19.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -260,6 +271,7 @@
 				D8141B9B1F36986600BDA446 /* Problem18.swift in Sources */,
 				D838FAE01F2EE113005260C9 /* SMP Core.swift in Sources */,
 				D8BB22391F2EBA9700A8C38D /* Problem4.swift in Sources */,
+				D80AF5951FC5338000EAC1D0 /* Problem20.swift in Sources */,
 				D8BE3B311F3AC9B200DCD816 /* FileMachine.swift in Sources */,
 				D8BB22331F2EBA9700A8C38D /* Problem12.swift in Sources */,
 				D8C482CA1F32E09400DA6355 /* Problem15.swift in Sources */,
