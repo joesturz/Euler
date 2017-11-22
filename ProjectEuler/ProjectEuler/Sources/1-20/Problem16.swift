@@ -13,12 +13,7 @@ class Problem16
   static func getTheSumOfAllTheIntsInTwoToThe(_ power: Int) -> Int
   {
     let result:BInt = BInt(2) ^ power
-    let resultAsString:String = result.description
-    var total = 0
-    for character in resultAsString
-    {
-      total += StringMachine.getIntFromCharacter(character)
-    }
-    return total
+    let resultAsString:String = result.dec
+    return StringMachine.addAllCharactersIn(string: resultAsString)
   }
 }

@@ -26,4 +26,14 @@ class StringMachine
   static func getIntFromString(_ string: String) -> Int {
     return Int(string)!
   }
+  
+  static func addAllCharactersIn(string:String) -> Int {
+    var total = 0
+    for character in string
+    {
+      total += StringMachine.getIntFromCharacter(character)
+    }
+    return total
+  }
+  
 }
