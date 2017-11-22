@@ -38,7 +38,8 @@ func printer(problem number: Int, solution result: BInt) {
 //printer(problem: 16, solution: Problem16.getTheSumOfAllTheIntsInTwoToThe(1000))
 //printer(problem: 17, solution: Problem17.getTotalLetterCountUpTo(1000))
 //printer(problem: 18, solution: Problem18.getLargestSumIn(Problem18.largeTriangleOfNumbers))
-printer(problem: 19, solution: Problem19.getCountOf(weekday: 1, from: 1901, to: 2000, on: 1))
+//printer(problem: 19, solution: Problem19.getCountOf(weekday: 1, from: 1901, to: 2000, on: 1))
+printer(problem: 20, solution: Problem20.sumAllNumsInFactorialOf(number: 100))
 
 
 //printer(problem: 67, solution: Problem18.getLargestSumIn(Problem67.reallyBigTriangle()))

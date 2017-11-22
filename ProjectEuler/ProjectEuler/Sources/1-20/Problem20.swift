@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+class Problem20
+{
+  static func sumAllNumsInFactorialOf(number: Int) -> Int {
+    var result = BInt(1)
+    for i in (2...number)
+    {
+       result *= BInt(i)
+    }
+    return StringMachine.addAllCharactersIn(string: result.dec)
+  }
+}
