@@ -40,6 +40,9 @@
 		D8BB22401F2EBA9700A8C38D /* Problem3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BB22321F2EBA9700A8C38D /* Problem3.swift */; };
 		D8BE3B311F3AC9B200DCD816 /* FileMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BE3B301F3AC9B200DCD816 /* FileMachine.swift */; };
 		D8C482CA1F32E09400DA6355 /* Problem15.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C482C91F32E09400DA6355 /* Problem15.swift */; };
+		D8EF3EF51FC8825100191956 /* Problem22.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EF3EF41FC8825100191956 /* Problem22.swift */; };
+		D8EF3EF71FC882B800191956 /* p022_names.txt in Resources */ = {isa = PBXBuildFile; fileRef = D8EF3EF61FC882B800191956 /* p022_names.txt */; };
+		D8EF3EF81FC882DA00191956 /* p022_names.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = D8EF3EF61FC882B800191956 /* p022_names.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +52,7 @@
 			dstPath = Resources;
 			dstSubfolderSpec = 7;
 			files = (
+				D8EF3EF81FC882DA00191956 /* p022_names.txt in CopyFiles */,
 				D86DE5A91FB9012900CB36E5 /* p067_triangle.txt in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,6 +93,8 @@
 		D8BE3B301F3AC9B200DCD816 /* FileMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileMachine.swift; sourceTree = "<group>"; };
 		D8C482C91F32E09400DA6355 /* Problem15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem15.swift; sourceTree = "<group>"; };
 		D8CA218F1F0B4896001951BC /* ProjectEuler */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ProjectEuler; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8EF3EF41FC8825100191956 /* Problem22.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem22.swift; sourceTree = "<group>"; };
+		D8EF3EF61FC882B800191956 /* p022_names.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p022_names.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				D80AF5971FC67D8500EAC1D0 /* Problem21.swift */,
+				D8EF3EF41FC8825100191956 /* Problem22.swift */,
 			);
 			path = "21-40";
 			sourceTree = "<group>";
@@ -200,6 +207,7 @@
 		D8CD153E1F40D64E00FC04B5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D8EF3EF61FC882B800191956 /* p022_names.txt */,
 				D86DE5A71FB8FF8700CB36E5 /* p067_triangle.txt */,
 			);
 			path = Resources;
@@ -267,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D86DE5A81FB8FF8700CB36E5 /* p067_triangle.txt in Resources */,
+				D8EF3EF71FC882B800191956 /* p022_names.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +317,7 @@
 				D838FADC1F2EE113005260C9 /* MG Benchmark Tools.swift in Sources */,
 				D838FADD1F2EE113005260C9 /* MG Basic Math.swift in Sources */,
 				D8BB223A1F2EBA9700A8C38D /* Problem13.swift in Sources */,
+				D8EF3EF51FC8825100191956 /* Problem22.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

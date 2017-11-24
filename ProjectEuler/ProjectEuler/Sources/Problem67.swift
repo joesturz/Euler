@@ -11,8 +11,8 @@ class Problem67
 {
   
   
-  static func reallyBigTriangle() -> [[Int]] {
-    let dataFromFile = FileMachine.getFileContents("p067_triangle", fileType: "txt")
+  static func reallyBigTriangleFrom(file: String) -> [[Int]] {
+    let dataFromFile = FileMachine.getFileContents(file, fileType: "txt")
     var arrayOfArraysOfNumbers = [[Int]]()
     for string in dataFromFile
     {
