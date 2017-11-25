@@ -41,7 +41,8 @@ func printer(problem number: Int, solution result: BInt) {
 //printer(problem: 19, solution: Problem19.getCountOf(weekday: 1, from: 1901, to: 2000, on: 1))
 //printer(problem: 20, solution: Problem20.sumAllNumsInFactorialOf(number: 100))
 //printer(problem: 21, solution: Problem21.getSumOfAmicableNumbersUnder(num: 10000))
-printer(problem: 22, solution: Problem22.getTotalValueForNames(file: "p022_names"))
+//printer(problem: 22, solution: Problem22.getTotalValueForNames(file: "p022_names"))
+printer(problem: 23, solution: Problem23.getSetOfNonAbundantSums(limit: 28123))
 
 
 //printer(problem: 67, solution: Problem18.getLargestSumIn(Problem67.reallyBigTriangleFrom(file: "p067_triangle")))
