@@ -33,14 +33,14 @@ class Problem23
   
   static func getAbundantNumbersUnder(limit: Int) -> [Int]
   {
-    let primeSet = Prime.setUsingSieveOfEratosthenes(to: limit)
+    let primeSet = PrimeMachine.setUsingSieveOfEratosthenes(to: limit)
     var abundantList = [Int]()
     
     for i in (12...limit)
     {
       if(!primeSet.contains(i))
       {
-        if Prime.isAbundant(number: i)
+        if FactorMachine.isAbundant(number: i)
         {
           abundantList.append(i)
         }

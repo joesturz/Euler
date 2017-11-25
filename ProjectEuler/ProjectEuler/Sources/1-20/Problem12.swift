@@ -17,7 +17,7 @@ class Problem12
     
     repeat {
       triangle = getTriangleValue(currentTriangleValue)
-      currentDivisorsCount = Prime.setOfDivisors(number: triangle).count
+      currentDivisorsCount = FactorMachine.setOfDivisors(number: triangle).count
       currentTriangleValue += 1
     } while currentDivisorsCount <= divisors
     

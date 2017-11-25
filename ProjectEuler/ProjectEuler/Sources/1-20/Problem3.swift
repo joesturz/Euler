@@ -39,10 +39,10 @@ class Problem3 {
   //var myString: String?
   
   static func getMaxPrimeFrom(largeNumber: Int) -> (Int){
-    let list = Prime.listDivisors(number: largeNumber)
+    let list = FactorMachine.listDivisors(number: largeNumber)
     var primeList = [Int]()
     for num in list {
-      if(Prime.determinePrime(number: num))
+      if(PrimeMachine.determinePrime(number: num))
       {
         primeList.append(num)
       }

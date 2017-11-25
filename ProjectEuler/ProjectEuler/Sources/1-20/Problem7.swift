@@ -19,7 +19,7 @@ class Problem7
     var iterator = 2
     while counter != number
     {
-      if Prime.determinePrime(number: iterator)
+      if PrimeMachine.determinePrime(number: iterator)
       {
         counter += 1
       }

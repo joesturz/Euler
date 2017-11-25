@@ -11,6 +11,6 @@ class Problem10
 {
   static func getSumOfPrimes(below: Int) -> Int
   {
-    return Prime.sieveOfEratosthenes(to: below).reduce(0, +)
+    return PrimeMachine.sieveOfEratosthenes(to: below).reduce(0, +)
   }
 }
