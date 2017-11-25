@@ -46,7 +46,45 @@ class Prime {
     return result
   }
   
-  static func listDivisors(number: Int) -> ([Int]){
+  static func setUsingSieveOfEratosthenes(to number: Int) -> Set<Int>
+  {
+    var result:Set<Int> = []
+    var temp = [Bool](repeating: true, count: number)
+    if number < 2
+    {
+      return result
+    }
+    else
+    {
+      let squareRootOfNumber = Int(ceil(sqrt(Double(number))))
+      for i in (2...squareRootOfNumber)
+      {
+        if temp[i] == true
+        {
+          var j = i * i
+          let iSquared = i * i
+          var iteration = 0
+          while (j < number)
+          {
+            temp[j] = false
+            j = iSquared + (i * iteration)
+            iteration = iteration + 1
+          }
+        }
+      }
+    }
+    for i in (2..<number)
+    {
+      if temp[i] == true
+      {
+        result.insert(i)
+      }
+    }
+    return result
+  }
+  
+  static func listDivisors(number: Int) -> ([Int])
+  {
     var temp:[Int] = [1]
     if number == 1
     {
@@ -65,8 +103,9 @@ class Prime {
     }
     return result
   }
-  
-  static func setOfDivisors(number: Int) -> (Set<Int>){
+
+  static func setOfDivisors(number: Int) -> (Set<Int>)
+  {
     var temp:Set<Int> = [1]
     if number == 1
     {
@@ -85,7 +124,22 @@ class Prime {
     }
     return result
   }
-
+  
+  static func setOfProperDivisors(number: Int) -> (Set<Int>)
+  {
+    var set = setOfDivisors(number: number)
+    set.remove(number)
+    return set
+  }
+  
+  static func isAbundant(number: Int) -> Bool {
+    let total = Prime.setOfProperDivisors(number: number).reduce(0, +)
+    if (total <= number)
+    {
+      return false
+    }
+    return true
+  }
   
   static func determinePrime(number: Int) -> Bool
   {

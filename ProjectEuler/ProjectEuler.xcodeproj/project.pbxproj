@@ -23,7 +23,7 @@
 		D86DE5A81FB8FF8700CB36E5 /* p067_triangle.txt in Resources */ = {isa = PBXBuildFile; fileRef = D86DE5A71FB8FF8700CB36E5 /* p067_triangle.txt */; };
 		D86DE5A91FB9012900CB36E5 /* p067_triangle.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = D86DE5A71FB8FF8700CB36E5 /* p067_triangle.txt */; };
 		D8878DEF1F13328800BE3F0E /* StringMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8878DEE1F13328800BE3F0E /* StringMachine.swift */; };
-		D8A38B9A1F10293800C5DB01 /* prime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A38B991F10293800C5DB01 /* prime.swift */; };
+		D8A38B9A1F10293800C5DB01 /* Prime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A38B991F10293800C5DB01 /* Prime.swift */; };
 		D8BB22331F2EBA9700A8C38D /* Problem12.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BB22251F2EBA9700A8C38D /* Problem12.swift */; };
 		D8BB22341F2EBA9700A8C38D /* Problem11.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BB22261F2EBA9700A8C38D /* Problem11.swift */; };
 		D8BB22351F2EBA9700A8C38D /* Problem9.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BB22271F2EBA9700A8C38D /* Problem9.swift */; };
@@ -43,6 +43,7 @@
 		D8EF3EF51FC8825100191956 /* Problem22.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EF3EF41FC8825100191956 /* Problem22.swift */; };
 		D8EF3EF71FC882B800191956 /* p022_names.txt in Resources */ = {isa = PBXBuildFile; fileRef = D8EF3EF61FC882B800191956 /* p022_names.txt */; };
 		D8EF3EF81FC882DA00191956 /* p022_names.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = D8EF3EF61FC882B800191956 /* p022_names.txt */; };
+		D8EF3EFA1FC9363600191956 /* Problem23.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EF3EF91FC9363600191956 /* Problem23.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -75,7 +76,7 @@
 		D849A8E01F31821100599897 /* Problem14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem14.swift; sourceTree = "<group>"; };
 		D86DE5A71FB8FF8700CB36E5 /* p067_triangle.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p067_triangle.txt; sourceTree = "<group>"; };
 		D8878DEE1F13328800BE3F0E /* StringMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringMachine.swift; sourceTree = "<group>"; };
-		D8A38B991F10293800C5DB01 /* prime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = prime.swift; sourceTree = "<group>"; };
+		D8A38B991F10293800C5DB01 /* Prime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prime.swift; sourceTree = "<group>"; };
 		D8BB22251F2EBA9700A8C38D /* Problem12.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem12.swift; sourceTree = "<group>"; };
 		D8BB22261F2EBA9700A8C38D /* Problem11.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem11.swift; sourceTree = "<group>"; };
 		D8BB22271F2EBA9700A8C38D /* Problem9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem9.swift; sourceTree = "<group>"; };
@@ -95,6 +96,7 @@
 		D8CA218F1F0B4896001951BC /* ProjectEuler */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ProjectEuler; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8EF3EF41FC8825100191956 /* Problem22.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem22.swift; sourceTree = "<group>"; };
 		D8EF3EF61FC882B800191956 /* p022_names.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p022_names.txt; sourceTree = "<group>"; };
+		D8EF3EF91FC9363600191956 /* Problem23.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem23.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			children = (
 				D80AF5971FC67D8500EAC1D0 /* Problem21.swift */,
 				D8EF3EF41FC8825100191956 /* Problem22.swift */,
+				D8EF3EF91FC9363600191956 /* Problem23.swift */,
 			);
 			path = "21-40";
 			sourceTree = "<group>";
@@ -160,7 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				D838FAD61F2EE0D3005260C9 /* BInt */,
-				D8A38B991F10293800C5DB01 /* prime.swift */,
+				D8A38B991F10293800C5DB01 /* Prime.swift */,
 				D8878DEE1F13328800BE3F0E /* StringMachine.swift */,
 				D8BE3B301F3AC9B200DCD816 /* FileMachine.swift */,
 			);
@@ -302,6 +305,7 @@
 				D8BB223F1F2EBA9700A8C38D /* Problem8.swift in Sources */,
 				D80AF5981FC67D8500EAC1D0 /* Problem21.swift in Sources */,
 				D81069911F34329700E0984A /* Problem16.swift in Sources */,
+				D8EF3EFA1FC9363600191956 /* Problem23.swift in Sources */,
 				D8BB22381F2EBA9700A8C38D /* Problem1.swift in Sources */,
 				D80AF5931FC3BED600EAC1D0 /* Problem19.swift in Sources */,
 				D849A8E11F31821100599897 /* Problem14.swift in Sources */,
@@ -313,7 +317,7 @@
 				D8BB22371F2EBA9700A8C38D /* main.swift in Sources */,
 				D8BB22401F2EBA9700A8C38D /* Problem3.swift in Sources */,
 				D838FADE1F2EE113005260C9 /* SMP Bignum Extensions.swift in Sources */,
-				D8A38B9A1F10293800C5DB01 /* prime.swift in Sources */,
+				D8A38B9A1F10293800C5DB01 /* Prime.swift in Sources */,
 				D838FADC1F2EE113005260C9 /* MG Benchmark Tools.swift in Sources */,
 				D838FADD1F2EE113005260C9 /* MG Basic Math.swift in Sources */,
 				D8BB223A1F2EBA9700A8C38D /* Problem13.swift in Sources */,
