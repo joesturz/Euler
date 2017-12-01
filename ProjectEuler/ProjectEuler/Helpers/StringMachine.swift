@@ -35,5 +35,12 @@ class StringMachine
     }
     return total
   }
-  
+  static func convert(array: [Int]) -> String {
+    var result = ""
+    for i in array
+    {
+      result += "\(i)"
+    }
+    return result
+  }
 }

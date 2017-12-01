@@ -20,6 +20,10 @@ func printer(problem number: Int, solution result: [[Int]]) {
   print("Problem \(number): \(result)")
 }
 
+func printer(problem number: Int, solution result: String) {
+  print("Problem \(number): \(result)")
+}
+
 func printer(problem number: Int, solution result: BInt) {
   print("Problem \(number): \(result.description)")
 }
@@ -47,7 +51,8 @@ func printer(problem number: Int, solution result: BInt) {
 //printer(problem: 21, solution: Problem21.getSumOfAmicableNumbersUnder(num: 10000))
 //printer(problem: 22, solution: Problem22.getTotalValueForNames(file: "p022_names"))
 //printer(problem: 23, solution: Problem23.getSetOfNonAbundantSums(limit: 28123))
-printer(problem: 24, solution: Problem24.getPermutations(a: [1,2,3]))
+//printer(problem: 24, solution: Problem24.getPermutation(4, for: [0,1,2,3]))
+printer(problem: 24, solution: Problem24.getPermutation(1_000_000, for: [0,1,2,3,4,5,6,7,8,9]))
 
 
 //printer(problem: 67, solution: Problem18.getLargestSumIn(Problem67.reallyBigTriangleFrom(file: "p067_triangle")))
