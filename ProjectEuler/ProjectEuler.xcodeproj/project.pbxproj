@@ -20,6 +20,7 @@
 		D838FADF1F2EE113005260C9 /* SMP String Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = D838FADA1F2EE113005260C9 /* SMP String Module.swift */; };
 		D838FAE01F2EE113005260C9 /* SMP Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = D838FADB1F2EE113005260C9 /* SMP Core.swift */; };
 		D849A8E11F31821100599897 /* Problem14.swift in Sources */ = {isa = PBXBuildFile; fileRef = D849A8E01F31821100599897 /* Problem14.swift */; };
+		D8632C8D1FD26C8700C69630 /* Problem25.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8632C8C1FD26C8700C69630 /* Problem25.swift */; };
 		D86DE5A81FB8FF8700CB36E5 /* p067_triangle.txt in Resources */ = {isa = PBXBuildFile; fileRef = D86DE5A71FB8FF8700CB36E5 /* p067_triangle.txt */; };
 		D86DE5A91FB9012900CB36E5 /* p067_triangle.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = D86DE5A71FB8FF8700CB36E5 /* p067_triangle.txt */; };
 		D8878DEF1F13328800BE3F0E /* StringMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8878DEE1F13328800BE3F0E /* StringMachine.swift */; };
@@ -77,6 +78,7 @@
 		D838FADA1F2EE113005260C9 /* SMP String Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SMP String Module.swift"; sourceTree = "<group>"; };
 		D838FADB1F2EE113005260C9 /* SMP Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SMP Core.swift"; sourceTree = "<group>"; };
 		D849A8E01F31821100599897 /* Problem14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem14.swift; sourceTree = "<group>"; };
+		D8632C8C1FD26C8700C69630 /* Problem25.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem25.swift; sourceTree = "<group>"; };
 		D86DE5A71FB8FF8700CB36E5 /* p067_triangle.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p067_triangle.txt; sourceTree = "<group>"; };
 		D8878DEE1F13328800BE3F0E /* StringMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringMachine.swift; sourceTree = "<group>"; };
 		D887BE7A1FD2031F007AAA59 /* PermutationsMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermutationsMachine.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				D8EF3EF41FC8825100191956 /* Problem22.swift */,
 				D8EF3EF91FC9363600191956 /* Problem23.swift */,
 				D8DEE7231FCFCC3600C43F53 /* Problem24.swift */,
+				D8632C8C1FD26C8700C69630 /* Problem25.swift */,
 			);
 			path = "21-40";
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				D8878DEF1F13328800BE3F0E /* StringMachine.swift in Sources */,
 				D8BB22371F2EBA9700A8C38D /* main.swift in Sources */,
 				D8DEE7241FCFCC3600C43F53 /* Problem24.swift in Sources */,
+				D8632C8D1FD26C8700C69630 /* Problem25.swift in Sources */,
 				D8BB22401F2EBA9700A8C38D /* Problem3.swift in Sources */,
 				D838FADE1F2EE113005260C9 /* SMP Bignum Extensions.swift in Sources */,
 				D8A38B9A1F10293800C5DB01 /* PrimeMachine.swift in Sources */,
