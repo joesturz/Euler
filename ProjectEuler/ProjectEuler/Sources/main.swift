@@ -60,7 +60,8 @@ func printer(problem number: Int, solution result: BInt) {
 //printer(problem: 25, solution: Problem25.getFibonacciOf(1000))
 //printer(problem: 26, solution: Problem26.findLongestRepeatIn(1000))
 //printer(problem: 27, solution: Problem27.findQuadraticFormulaForMax(1000))
-printer(problem: 28, solution: Problem28.findSumOfSpiralDiagonalOfSquare(1001))
+//printer(problem: 28, solution: Problem28.findSumOfSpiralDiagonalOfSquare(1001))
+printer(problem: 29, solution: Problem29.getUniqueCountOfAllExponents(100))
 
 //printer(problem: 67, solution: Problem18.getLargestSumIn(Problem67.reallyBigTriangleFrom(file: "p067_triangle")))
 
