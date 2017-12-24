@@ -24,6 +24,7 @@
 		D8632C8D1FD26C8700C69630 /* Problem25.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8632C8C1FD26C8700C69630 /* Problem25.swift */; };
 		D86DE5A81FB8FF8700CB36E5 /* p067_triangle.txt in Resources */ = {isa = PBXBuildFile; fileRef = D86DE5A71FB8FF8700CB36E5 /* p067_triangle.txt */; };
 		D86DE5A91FB9012900CB36E5 /* p067_triangle.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = D86DE5A71FB8FF8700CB36E5 /* p067_triangle.txt */; };
+		D877E7A81FEF691800124128 /* Problem28.swift in Sources */ = {isa = PBXBuildFile; fileRef = D877E7A71FEF691800124128 /* Problem28.swift */; };
 		D8878DEF1F13328800BE3F0E /* StringMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8878DEE1F13328800BE3F0E /* StringMachine.swift */; };
 		D887BE7B1FD2031F007AAA59 /* PermutationsMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D887BE7A1FD2031F007AAA59 /* PermutationsMachine.swift */; };
 		D8A38B9A1F10293800C5DB01 /* PrimeMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A38B991F10293800C5DB01 /* PrimeMachine.swift */; };
@@ -83,6 +84,7 @@
 		D849A8E01F31821100599897 /* Problem14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem14.swift; sourceTree = "<group>"; };
 		D8632C8C1FD26C8700C69630 /* Problem25.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem25.swift; sourceTree = "<group>"; };
 		D86DE5A71FB8FF8700CB36E5 /* p067_triangle.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p067_triangle.txt; sourceTree = "<group>"; };
+		D877E7A71FEF691800124128 /* Problem28.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem28.swift; sourceTree = "<group>"; };
 		D8878DEE1F13328800BE3F0E /* StringMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringMachine.swift; sourceTree = "<group>"; };
 		D887BE7A1FD2031F007AAA59 /* PermutationsMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermutationsMachine.swift; sourceTree = "<group>"; };
 		D8A38B991F10293800C5DB01 /* PrimeMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeMachine.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				D8632C8C1FD26C8700C69630 /* Problem25.swift */,
 				D8E3A91F1FD8ECCE008150E6 /* Problem26.swift */,
 				D81020851FDCA52B009ADE69 /* Problem27.swift */,
+				D877E7A71FEF691800124128 /* Problem28.swift */,
 			);
 			path = "21-40";
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				D8BB22361F2EBA9700A8C38D /* Problem7.swift in Sources */,
 				D8878DEF1F13328800BE3F0E /* StringMachine.swift in Sources */,
 				D8BB22371F2EBA9700A8C38D /* main.swift in Sources */,
+				D877E7A81FEF691800124128 /* Problem28.swift in Sources */,
 				D8DEE7241FCFCC3600C43F53 /* Problem24.swift in Sources */,
 				D8632C8D1FD26C8700C69630 /* Problem25.swift in Sources */,
 				D8BB22401F2EBA9700A8C38D /* Problem3.swift in Sources */,

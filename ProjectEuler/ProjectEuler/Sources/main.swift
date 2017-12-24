@@ -59,7 +59,8 @@ func printer(problem number: Int, solution result: BInt) {
 //printer(problem: 24, solution: Problem24.getPermutation(1_000_000, for: [0,1,2,3,4,5,6,7,8,9]))
 //printer(problem: 25, solution: Problem25.getFibonacciOf(1000))
 //printer(problem: 26, solution: Problem26.findLongestRepeatIn(1000))
-printer(problem: 27, solution: Problem27.findQuadraticFormulaForMax(1000))
+//printer(problem: 27, solution: Problem27.findQuadraticFormulaForMax(1000))
+printer(problem: 28, solution: Problem28.findSumOfSpiralDiagonalOfSquare(1001))
 
 //printer(problem: 67, solution: Problem18.getLargestSumIn(Problem67.reallyBigTriangleFrom(file: "p067_triangle")))
 
